@@ -1,0 +1,14 @@
+<ion-toolbar color="secondary">
+    <div class="avatar" slot="secondary">
+      <img class="avatar-img"  src="{{user.photoUrl}}" alt="userAvatar"><span class="username">{{user.name }}</span>
+    </div>
+
+    <div class="logout" slot="secondary" (click)="logout()">
+      <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+    </div>
+
+  <div class="logo">
+    <img class="logo-img" src="./../../../assets/logo.png" alt="" > <span class="firstWord">This</span><span class="point">.</span><span class="secondWord">Video</span>
+  </div>
+
+</ion-toolbar>

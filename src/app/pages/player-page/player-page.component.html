@@ -1,0 +1,31 @@
+<app-header [user]= "user"></app-header>
+<div class="back-to-main">
+  <ion-icon name="arrow-back-circle" (click)="return()"></ion-icon>
+</div>
+<div class="player-wrapper">
+  <youtube-player videoId="{{videoId}}"
+  suggestedQuality="highres"
+  [height]="220"
+  [width]="450"
+  ></youtube-player>
+</div>
+<div class="info-block">
+  <ion-grid>
+    <ion-row>
+      <ion-col>{{videoInfo.title}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="desc"> {{videoInfo.description}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col> <ion-icon name="heart-outline"></ion-icon> {{statistics.likeCount}}</ion-col>
+      <ion-col><ion-icon name="videocam-outline"></ion-icon> {{statistics.viewCount}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-icon name="chatbubbles-outline"></ion-icon> {{statistics.commentCount}}</ion-col>
+      <ion-col><ion-icon name="bookmark-outline"></ion-icon> {{statistics.favoriteCount}}</ion-col>
+    </ion-row>
+
+  </ion-grid>
+</div>
+

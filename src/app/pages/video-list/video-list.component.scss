@@ -1,0 +1,11 @@
+.wrapper {
+  min-width: 450px;
+  .video-block {
+    height: 90vh;
+    padding: 3vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

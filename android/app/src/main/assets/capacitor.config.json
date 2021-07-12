@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "youtube_angular",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

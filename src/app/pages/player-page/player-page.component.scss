@@ -1,0 +1,39 @@
+.player-wrapper {
+  margin: 4vh auto;
+}
+.back-to-main {
+  height: 6vh;
+  ion-icon {
+    font-size: 55px;
+    font-weight: bold;
+    color: yellow;
+    margin-left: 5vh;
+    margin-top: 2vh;
+  }
+}
+ion-grid {
+  width: 90%;
+  margin: 0 auto;
+  ion-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .desc{
+      font-size: 16px;
+      color: grey;
+      padding: 3vh 0;
+      border-bottom: 1px solid grey;
+    }
+    ion-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        ion-icon {
+          font-size: 35px;
+          color: #3dc2ff;
+          padding: 0 1vh;
+        }
+    }
+  }
+}

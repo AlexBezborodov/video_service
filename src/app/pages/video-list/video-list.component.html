@@ -1,0 +1,11 @@
+
+<div class="wrapper">
+  <app-header [user]= "user"></app-header>
+  <div class="video-block" >
+    <div *ngFor="let item of videoList">
+      <app-video-item [video]="item"></app-video-item>
+    </div>
+
+  </div>
+</div>
+

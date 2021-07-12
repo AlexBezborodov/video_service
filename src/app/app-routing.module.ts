@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PlayerPageComponent } from './pages/player-page/player-page.component';
+import { StartPageComponent } from './pages/start-page/start-page.component';
+import { VideoListComponent } from './pages/video-list/video-list.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'login', pathMatch: 'full' },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'login',
+    component: StartPageComponent
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'main',
+    component: VideoListComponent,
   },
+  {
+    path: 'video',
+    component: PlayerPageComponent
+  }
 ];
 
 @NgModule({

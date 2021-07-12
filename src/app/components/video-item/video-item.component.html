@@ -1,0 +1,8 @@
+  <ion-card >
+    <img src="{{video.snippet.thumbnails.default.url}}" alt="">
+    <ion-card-header >
+      <ion-card-title class="title">{{video.snippet.title}}</ion-card-title>
+    </ion-card-header>
+    <div class="link" ><ion-icon name="play-circle-outline" id="{{video.snippet.resourceId.videoId}}" (click)="openVideo($event)"></ion-icon></div>
+  </ion-card>
+

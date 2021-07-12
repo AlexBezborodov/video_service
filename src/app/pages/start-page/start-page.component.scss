@@ -1,0 +1,63 @@
+.container {
+  width: 90%;
+  height: 95%;
+  margin: 2vh auto;
+  border: 1px solid grey;
+  border-radius: 0.5vh;
+  max-width: 900px;
+  min-width: 350px;
+  -webkit-box-shadow: 4px 3px 10px 17px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 3px 10px 17px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 3px 10px 17px rgba(34, 60, 80, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    width: 32vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4vh auto;
+    .logo-img {
+      width: 100px;
+      border-radius: 100px;
+      margin: 1vh ;
+    }
+    .firstWord {
+      font-size: 4vh;
+      font-weight: bold;
+    }
+    .secondWord {
+      font-size: 3.7vh;
+      color: rgb(255, 208, 0);
+      font-style: italic;
+      font-weight: 600;
+    }
+    .point {
+      color: black;
+      font-size: 4vh;
+    }
+  }
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+    h3 {
+      text-align: center;
+    }
+    .google-btn, .fb-btn {
+      height: 6vh;
+      max-width: 450px;
+      ion-icon {
+        padding-right:2vh;
+      }
+    }
+
+    .google-btn {
+        --background: azure;
+        --color:blue;
+
+    }
+    .fb-btn {}
+  }
+}

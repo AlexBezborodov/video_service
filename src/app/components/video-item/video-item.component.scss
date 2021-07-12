@@ -1,0 +1,28 @@
+ion-card {
+  width: 66vh;
+  height: 25vh;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: ease-in-out 0.7s;
+
+  ion-card-title {
+    opacity: 0.6;
+    text-align: center;
+  }
+  img {
+    border-radius: 2vh;
+    margin-left: 1vh;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: gold;
+    opacity:0.5
+  }
+}
+
